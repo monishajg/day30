@@ -7,6 +7,14 @@
     <title>Successful Transfer</title>
 </head>
 <body>
-    
+    <div data-th-object="${transfer}">
+        Your transfer of $<span data-th-text="*{transfer.amount}"></span> from 
+        <span data-th-text="*{transfer.from}"></span> to  
+        <span data-th-text="${transfer.to}"></span><br />
+        is successful.</p>
+        Transaction id is <a
+        data-th-href="@{'/transfer/{transferID}' (transferId=*{transferId})}"
+        data-th-text="*{transferId}"></a><br /><br />
+      </div>
 </body>
 </html>

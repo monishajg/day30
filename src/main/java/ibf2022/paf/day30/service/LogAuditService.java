@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 // import org.springframework.transaction.annotation.Transactional; //(wrkshp24)
 
-// import ibf2022.paf.day30.repository.AppRepo;
+// import ibf2022.paf.day30.repository.AccountsRepository;
 
 //@Service
 public class LogAuditService {
     //@Autowired
-    //private AppRepo appRepo;
+    //private AccountsRepository acctRepo;
     
     //@Transactional
 }

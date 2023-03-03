@@ -33,10 +33,10 @@ import static ibf2022.paf.day30.Constants.*;
 public class RestController {
 
     // @Autowired
-    // private AppService appService;
+    // private FundsTransferService trnsService;
     
     // @Autowired
-    // private AppRepo appRepo;
+    // private AccountsRepository acctRepo;
     
     
     
