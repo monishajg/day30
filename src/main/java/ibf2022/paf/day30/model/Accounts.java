@@ -14,15 +14,16 @@ import lombok.NoArgsConstructor;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 
 @Data
-@NoArgsConstructor //uncomment both when variables listed 
+@NoArgsConstructor
 @AllArgsConstructor
 public class Accounts {
     
-    @Size(min = 10, max = 10, message = "Length of accountId should be 10 characters")
+    //@Size(min = 10, max = 10, message = "Length of accountId should be 10 characters")
     protected String accountId;
     
     protected String name;
     
+    //@Size(min = 10, message = "Min transfer is $10. Insufficient balance")
     private BigDecimal balance;
 
 }

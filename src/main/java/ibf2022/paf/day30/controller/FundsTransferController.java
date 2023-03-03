@@ -13,15 +13,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import ibf2022.paf.day30.model.Transfer;
+import ibf2022.paf.day30.repository.AccountsRepository;
+import ibf2022.paf.day30.service.FundsTransferService;
 import jakarta.validation.Valid;
-
-// import ibf2022.paf.day30.service.FundsTransferService;
 
 @Controller
 public class FundsTransferController {
 
-    //@Autowired
-    //private FundsTransferService trnsService;
+    @Autowired
+    private FundsTransferService transferService;
+    
+    @Autowired
+    private AccountsRepository accountsRepo;
 
     @GetMapping(path={"/", "/index.html"})
     public String getLandingPage (Model model) {

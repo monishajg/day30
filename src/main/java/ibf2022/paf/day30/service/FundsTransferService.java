@@ -17,7 +17,7 @@ import ibf2022.paf.day30.repository.AccountsRepository;
 //@Service
 public class FundsTransferService {
     @Autowired
-    private AccountsRepository acctRepo;
+    private AccountsRepository accountsRepo;
     
 //     @Transactional(rollbackFor= OrderException.class)
     

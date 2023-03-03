@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 // import org.springframework.web.bind.annotation.RestController;
 
+import ibf2022.paf.day30.service.LogAuditService;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonObjectBuilder;
@@ -29,11 +30,10 @@ import jakarta.validation.Valid;
 import static ibf2022.paf.day30.Constants.*;
 
 // @RestController
-// @RequestMapping("/api/employees") //doesnt tell whether put/post, thus top level
 public class RestController {
 
-    // @Autowired
-    // private FundsTransferService trnsService;
+    @Autowired
+    private LogAuditService auditService;
     
     // @Autowired
     // private AccountsRepository acctRepo;
