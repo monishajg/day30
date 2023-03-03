@@ -6,6 +6,7 @@ import javax.management.loading.PrivateClassLoader;
 
 import org.springframework.util.MultiValueMap;
 
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,10 +18,11 @@ import org.springframework.jdbc.support.rowset.SqlRowSet;
 @AllArgsConstructor
 public class Accounts {
     
-    private String accountId;
+    @Size(min = 10, max = 10, message = "Length of accountId should be 10 characters")
+    protected String accountId;
     
-    private String name;
+    protected String name;
     
     private BigDecimal balance;
-    
+
 }

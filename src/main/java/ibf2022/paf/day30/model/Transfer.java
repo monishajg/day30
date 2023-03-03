@@ -5,19 +5,27 @@ import java.math.BigDecimal;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 public class Transfer extends Accounts{
     
-    //public from (String name, String accountId) {
+    private String transferId;
     
-    //}
+    public void fromAccount(String name, String accountId) {
+        this.name = name;
+        this.accountId = accountId;
+    }
     
-    //public class to {
     
-    //}
+    public void toAccount(String name, String accountId) {
+        this.name = name;
+        this.accountId = accountId;
+    }
     
-    // @DecimalMin(value = "0.01", inclusive = true, message = "Amount must be greater than or equal to 0.01")
-    // private BigDecimal amount;
+    private BigDecimal amount;
     
-    // private String comments;
+    private String comments;
     
 }

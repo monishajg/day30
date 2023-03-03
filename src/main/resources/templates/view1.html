@@ -9,8 +9,8 @@
 <body>
     <div data-th-object="${transfer}">
         Your transfer of $<span data-th-text="*{transfer.amount}"></span> from 
-        <span data-th-text="*{transfer.from}"></span> to  
-        <span data-th-text="${transfer.to}"></span><br />
+        <span data-th-text="*{transfer.fromAccount}"></span> to  
+        <span data-th-text="${transfer.toAccount}"></span><br />
         is successful.</p>
         Transaction id is <a
         data-th-href="@{'/transfer/{transferID}' (transferId=*{transferId})}"
