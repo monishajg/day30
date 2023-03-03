@@ -25,7 +25,7 @@ public class FundsTransferController {
 
     @GetMapping(path={"/", "/index.html"})
     public String getLandingPage (Model model) {
-    
+    model.addAttribute("transfer", new Transfer());
     return "index";
     }
     
